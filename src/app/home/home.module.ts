@@ -5,14 +5,11 @@ import { TranslateModule } from '@ngx-translate/core';
 import { HomeRoutes } from './home.routing';
 import { HomeComponent } from './home.component';
 
-import { MatTabsModule } from '@angular/material';
-
 @NgModule({
   imports: [
     CommonModule,
     HomeRoutes,
-    TranslateModule.forChild(),
-    MatTabsModule,
+    TranslateModule.forChild()
   ],
   declarations: [HomeComponent]
 })

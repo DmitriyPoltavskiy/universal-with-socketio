@@ -12,8 +12,6 @@ import { SharedModule } from '@shared/shared.module';
 // components
 import { AppRoutes } from './app.routing';
 import { AppComponent } from './app.component';
-import { SocketService } from '@shared/services/socket.service';
-import { AuthService } from '@shared/services/auth.service';
 
 @NgModule({
   imports: [
@@ -26,11 +24,7 @@ import { AuthService } from '@shared/services/auth.service';
     SharedModule.forRoot(),
   ],
   declarations: [AppComponent],
-  providers: [
-    CookieService,
-    SocketService,
-    AuthService,
-  ],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
